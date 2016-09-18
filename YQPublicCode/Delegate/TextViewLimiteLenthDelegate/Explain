@@ -1,0 +1,18 @@
+
+
+1、创建一个YQTextViewLimiteLenthDelegate类型的对象：delgate
+2、设置delegate的maxLenth属性，即UITextView允许输入的最大长度：delegate.maxLenth = 100
+3、在UITextView的代理方法中调用delegate对应的方法：
+- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text
+{
+    if (self.allowNewLine == NO && [text isEqualToString:@"\n"]) {
+        [self buttonAction:nil];
+        return NO;
+    }else{
+        return [self.limitLenthDelegate textView:textView shouldChangeTextInRange:range replacementText:text];
+    }
+}
+
+- (void)textViewDidChange:(UITextView *)textView{
+    [self.limitLenthDelegate textViewDidChange:textView];
+}
