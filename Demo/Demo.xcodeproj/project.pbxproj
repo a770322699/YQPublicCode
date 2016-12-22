@@ -30,6 +30,7 @@
 		D8E8723E1D8E848E00567EEE /* Explain in Resources */ = {isa = PBXBuildFile; fileRef = D8E872261D8E848E00567EEE /* Explain */; };
 		D8E8723F1D8E848E00567EEE /* YQTextViewLimitLenthDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E872281D8E848E00567EEE /* YQTextViewLimitLenthDelegate.m */; };
 		D8E872401D8E848E00567EEE /* YQFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E8722F1D8E848E00567EEE /* YQFunction.m */; };
+		D8E872821D910E8100567EEE /* UIView+YQProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E872811D910E8100567EEE /* UIView+YQProperty.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +80,8 @@
 		D8E8722C1D8E848E00567EEE /* YQSynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQSynthesizeSingleton.h; sourceTree = "<group>"; };
 		D8E8722E1D8E848E00567EEE /* YQFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQFunction.h; sourceTree = "<group>"; };
 		D8E8722F1D8E848E00567EEE /* YQFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQFunction.m; sourceTree = "<group>"; };
+		D8E872801D910E8100567EEE /* UIView+YQProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YQProperty.h"; sourceTree = "<group>"; };
+		D8E872811D910E8100567EEE /* UIView+YQProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YQProperty.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +179,8 @@
 				D8E872211D8E848E00567EEE /* UITableViewCell+SubViewBgColor.m */,
 				D8E872221D8E848E00567EEE /* UIView+YQCategory.h */,
 				D8E872231D8E848E00567EEE /* UIView+YQCategory.m */,
+				D8E872801D910E8100567EEE /* UIView+YQProperty.h */,
+				D8E872811D910E8100567EEE /* UIView+YQProperty.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -297,6 +302,7 @@
 				D8E8723D1D8E848E00567EEE /* UIView+YQCategory.m in Sources */,
 				D8E872401D8E848E00567EEE /* YQFunction.m in Sources */,
 				D8E872371D8E848E00567EEE /* UICollectionViewCell+YQProperty.m in Sources */,
+				D8E872821D910E8100567EEE /* UIView+YQProperty.m in Sources */,
 				D8E871F41D8E844C00567EEE /* AppDelegate.m in Sources */,
 				D8E8723C1D8E848E00567EEE /* UITableViewCell+SubViewBgColor.m in Sources */,
 				D8E872301D8E848E00567EEE /* NSArray+YQCategory.m in Sources */,

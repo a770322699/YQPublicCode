@@ -26,7 +26,7 @@ const char *searchBarTextFieldKey    = "searchBarTextFieldKey";
 - (void)setCancelButtonTitle:(NSString *)title animation:(BOOL)animation{
     [self setShowsCancelButton:title animated:animation];
     if (title) {
-        NSArray *buttons = [self ViewsWithKindOfClass:[UIButton class]];
+        NSArray *buttons = [self viewsWithKindOfClass:[UIButton class]];
         [(UIButton *)[buttons lastObject] setTitle:title forState:UIControlStateNormal];
     }
 }

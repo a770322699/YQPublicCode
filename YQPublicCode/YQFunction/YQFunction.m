@@ -32,7 +32,7 @@ CGRect CGRectMakeOriginSize(CGPoint origin, CGSize size){
 
 
 // 方法替换
-void methodSwizzle(Class theClass, SEL origSEL, SEL overrideSEL){
+void yq_methodSwizzle(Class theClass, SEL origSEL, SEL overrideSEL){
     Method origMethod = class_getInstanceMethod(theClass, origSEL);
     Method overrideMethod= class_getInstanceMethod(theClass, overrideSEL);
     if (class_addMethod(theClass, origSEL, method_getImplementation(overrideMethod), method_getTypeEncoding(overrideMethod))) {

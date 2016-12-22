@@ -23,4 +23,4 @@ bool pointInRect(CGPoint aPoint, CGRect aRect, bool boundary);
 CGRect CGRectMakeOriginSize(CGPoint origin, CGSize size);
 
 // 方法替换
-void methodSwizzle(Class theClass, SEL origSEL, SEL overrideSEL);
+void yq_methodSwizzle(Class theClass, SEL origSEL, SEL overrideSEL);

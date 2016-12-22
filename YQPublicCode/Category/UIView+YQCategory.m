@@ -31,14 +31,14 @@
     return nil;
 }
 // 从子视图中递归查询所有某个类型的视图（包括子类型）
-- (NSArray *)ViewsWithKindOfClass:(Class)aClass{
+- (NSArray *)viewsWithKindOfClass:(Class)aClass{
     NSMutableArray *views = nil;
     for (UIView *subView in self.subviews) {
         if ([subView isKindOfClass:aClass]) {
             if (views == nil) views = [NSMutableArray array];
             [views addObject:subView];
         }
-        NSArray *subViewResultViews = [subView ViewsWithKindOfClass:aClass];
+        NSArray *subViewResultViews = [subView viewsWithKindOfClass:aClass];
         if (subViewResultViews.count) {
             if (views == nil) views = [NSMutableArray array];
             [views addObjectsFromArray:subViewResultViews];
@@ -57,14 +57,14 @@
     return nil;
 }
 // 从子视图中递归查询所有某个类型的视图（不包括子类型）
-- (NSArray *)ViewsWithMembaerOfClass:(Class)aClass{
+- (NSArray *)viewsWithMembaerOfClass:(Class)aClass{
     NSMutableArray *views = nil;
     for (UIView *subView in self.subviews) {
         if ([subView isMemberOfClass:aClass]) {
             if (views == nil) views = [NSMutableArray array];
             [views addObject:subView];
         }
-        NSArray *subViewResultViews = [subView ViewsWithMembaerOfClass:aClass];
+        NSArray *subViewResultViews = [subView viewsWithMembaerOfClass:aClass];
         if (subViewResultViews.count) {
             if (views == nil) views = [NSMutableArray array];
             [views addObjectsFromArray:subViewResultViews];
